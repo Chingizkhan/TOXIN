@@ -1,0 +1,35 @@
+.room-details__right-side
+    .right-side__window
+        .right-side__window-header
+            .right-side__window-left
+                span.right-side__window-number № 888
+                span.right-side__window-luxe люкс
+            .right-side__window-right
+                span.right-side__window-count 9 990₽
+                span.right-side__window-text в сутки
+        .right-side__window-dates
+            .right-side__window-half
+                p.right-side__window-half__title прибытие
+                input(type="text" class="datepicker-here" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px; border: 1px solid rgba(31, 32, 65, 0.25);" data-position="bottom left" placeholder="ДД.ММ.ГГГГ")
+            .right-side__window-half
+                p.right-side__window-half__title выезд
+                input(type="text" class="datepicker-here" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px; border: 1px solid rgba(31, 32, 65, 0.25);" data-position="bottom left" placeholder="ДД.ММ.ГГГГ")
+        .right-side__window-guests
+            .right-side__window-guests__title гости
+            .guests-input.right-side__window-guests__input 3 гостя
+            include ../../modules/dropdown/dropdown
+        .right-side__window-info
+            .right-side__window-info__row
+                .right-side__window-info__text 9 990₽ х 4 суток
+                .right-side__window-info__price 39 960₽
+            .right-side__window-info__row
+                .right-side__window-info__text.i Сбор за услуги: скидка 2 179₽
+                .right-side__window-info__price 0₽
+            .right-side__window-info__row
+                .right-side__window-info__text.i Сбор за дополнительные услуги
+                .right-side__window-info__price 300₽
+        .right-side__window-sum
+            .right-side__window-sum__text Итого
+            .right-side__window-sum__line
+            .right-side__window-sum__number 38 081₽
+        a(href="#").btn-full.btn-large забронировать

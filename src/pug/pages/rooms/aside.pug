@@ -1,0 +1,63 @@
+section.s-aside
+    .aside
+        .aside-date
+            p.aside__text даты пребывания в отеле
+            .aside-input 19 авг - 23 авг
+        .aside-guests
+            p.aside__text гости
+            .aside-input 3 гостя, 1 младенец
+        .aside-range
+            .aside-range__header
+                label(for="amount").aside__text диапазон цены
+                input(type="text" class="aside__count" id="amount" readonly style="border:0; max-width:102px")
+            .aside-range__line
+                #slider-range
+            p.aside-range__text Стоимость за сутки пребывания в номере
+        .checkbox-buttons
+            p.aside__text Checkbox Buttons
+            .checkboxes-wrapper
+                .checkbox
+                    input(type="checkbox" value="smoke" id="smoke")
+                    label(for="smoke").checbox-input Можно курить
+                .checkbox
+                    input(type="checkbox" value="pets" id="pets" checked)
+                    label(for="pets").checbox-input Можно с питомцами
+                .checkbox
+                    input(type="checkbox" value="guests" id="guests" checked)
+                    label(for="guests").checbox-input Можно пригласить гостей (до 10 человек)
+        .aside-available
+            p.aside__text доступность
+            .available
+                .checkbox
+                    input(type="checkbox" value="coridor" id="coridor")
+                    label(for="coridor").checbox-input Широкий коридор
+                    p.available__text Ширина коридоров в номере не менее 91 см.
+                .checkbox
+                    input(type="checkbox" value="helper" id="helper")
+                    label(for="helper").checbox-input Помощник для инвалидов
+                    p.available__text На 1 этаже вас встретит специалист  и проводит до номера.
+        .aside-comfort
+            p.aside__text удобства номера
+            .aside-input.open-dropdown 2 спальни, 2 кровати...
+            include ../../modules/dropdown/dropdown-rooms
+        .aside-dop
+            p.aside-dop__text дополнительные удобства
+            .aside-dop__wrapper
+                .checkbox
+                    input(type="checkbox" value="breakfast" id="breakfast")
+                    label(for="breakfast").checbox-input Завтрак
+                .checkbox
+                    input(type="checkbox" value="table" id="table" checked)
+                    label(for="table").checbox-input Письменный стол
+                .checkbox
+                    input(type="checkbox" value="chair" id="chair" checked)
+                    label(for="chair").checbox-input Стул для кормления
+                .checkbox
+                    input(type="checkbox" value="bed" id="bed" checked)
+                    label(for="bed").checbox-input Кроватка
+                .checkbox
+                    input(type="checkbox" value="tv" id="tv")
+                    label(for="tv").checbox-input Телевизор
+                .checkbox
+                    input(type="checkbox" value="shampoo" id="shampoo")
+                    label(for="shampoo").checbox-input Шампунь

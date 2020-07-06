@@ -1,0 +1,209 @@
+.s-rooms-found {
+    flex: 1;
+    margin-top: 30px;
+    margin-left: 60px;
+    padding-bottom: 70px;
+}
+
+.rooms-found {
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: $mb;
+        margin-bottom: 21px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    &__item {
+        max-width: 270px;
+        position: relative;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+            .rooms-found__item-shadow-left {
+                display: block;
+            }
+            .rooms-found__item-shadow-right {
+                display: block;
+            }
+            .slick-arrow {
+                display: block !important;
+            }
+        }
+        &-shadow {
+            &-left {
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+                height: 151px;
+                width: 42px;
+                position: absolute;
+                z-index: 1;
+                display: none;
+            }
+            &-right {
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                height: 151px;
+                width: 42px;
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                display: none;
+            }
+        }
+    }
+    &__body {
+        padding: 20px;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 4px;
+    }
+    &__body-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__line {
+        width: 230px;
+        background: rgba(31, 32, 65, 0.1);
+        height: 1px;
+        margin: 10px 0;
+    }
+    &__number {
+        color: #1F2041;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $mb;
+        margin-right: 5px;
+    }
+    &__isLuxe {
+        font-size: 12px;
+        line-height: 15px;
+        color: $purple;
+        font-family: $mb;
+        text-transform: uppercase;
+    }
+    &__digit {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $mb;
+        color: $gray-light;
+        margin-right: 5px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        color: $gray-light;
+    }
+    &__stars {
+        display: flex;
+    }
+    &__star {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.rooms-found__slider {
+    &-img {
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+    .slick-arrow {
+        display: none !important;
+        position: absolute;
+        z-index: 1;
+        font-size: 0;
+        width: 44px;
+        height: 44px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        background: url('../img/slider-arrow.png') center center no-repeat;
+        top: 53px;
+    }
+    .slick-next {
+        right: 0;
+        transform: rotate(180deg);
+    }
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        z-index: 3;
+        & > * {
+            &:not(:last-child) { margin-right: 3.75px; }
+        }
+        .slick-active button {
+            background-color: $white;
+        }
+        li {
+            button {
+                padding: 0;
+                font-size: 0;
+                width: 7.5px;
+                height: 7.5px;
+                border-radius: 50%;
+                border: 1px solid $white;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.rooms-found__pages {
+    margin: 0 auto;
+    max-width: 240px;
+    .pages {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 10px;
+        .page-current {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $gradient;
+            text-align: center;
+            line-height: 40px;
+            color: $white;
+            cursor: pointer;
+        }
+        .page {
+            color: $gray-light;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .page-next {
+            padding: 0;
+            border: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $green;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                content: '';
+                position: absolute;
+                background: url('../img/arrow_forward_white.png') center center no-repeat;
+                top: 8px;
+                left: 8px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .pages__text {
+        color: $gray;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

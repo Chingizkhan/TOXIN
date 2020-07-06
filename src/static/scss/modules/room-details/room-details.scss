@@ -1,0 +1,8 @@
+.room-details__wrapper {
+    .container {
+        display: flex;
+    }
+}
+
+@import "room-details-left-side";
+@import "room-details-right-side";

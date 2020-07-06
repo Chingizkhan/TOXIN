@@ -1,0 +1,76 @@
+.dropdown-rooms {
+    display: none;
+    border: 1px solid $gray-light;
+    width: 266px;
+    position: absolute;
+    padding-left: 15px;
+    padding-right: 7px;
+    background-color: $white;
+    left: 0px;
+    bottom: -160px;
+    border-radius: 4px;
+    z-index: 1;
+    &__text {
+        font-size: 12px;
+        line-height: 15px;
+        font-family: $mb;
+        text-transform: uppercase;
+        width: 20px;
+        text-align: center;
+        border: none;
+        user-select: none;
+    }
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 7px;
+    }
+    &__count {
+        display: flex;
+        align-items: center;
+        width: 92px;
+        justify-content: space-between;
+    }
+    &__button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        color: $gray-light;
+        cursor: pointer;
+        user-select: none;
+    }
+    &-buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        user-select: none;
+        &__clear {
+            color: $gray-light;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: $mb;
+            cursor: pointer;
+        }
+        &__apply {
+            color: $purple;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: $mb;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* FOR JS */
+
+.open {
+    display: block;
+}

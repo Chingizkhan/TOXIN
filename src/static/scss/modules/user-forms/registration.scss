@@ -1,0 +1,156 @@
+.s-registration {
+    .container {
+        padding-top: 20px;
+        width: 1440px;
+        height: 753px;
+        background: url('../img/background-login.png') no-repeat center center;
+    }
+}
+
+.registration {
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 40px 30px 30px 30px;
+    width: 380px;
+    &__title {
+        font-family: $mb;
+        font-size: 24px;
+        line-height: 30px;
+        color: #1F2041;
+        margin-bottom: 20px;
+    }
+    &__field {
+        border-radius: 4px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        font-size: 14px;
+        line-height: 18px;
+        padding: 13px 0 13px 15px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        &::placeholder {
+            color: rgba(31, 32, 65, 0.25);
+        }
+    }
+    &__radio {
+        margin-bottom: 20px;
+        input[type="radio"] {
+            opacity: 0;
+        }
+        label {
+            user-select: none;
+            position: relative;
+            margin-right: 20px;
+            &:after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #BC9CFF;
+                border-radius: 50%;
+                top: 0;
+                left: -25px;
+            }
+            &:before {
+                position: absolute;
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                top: 4px;
+                left: -21px;
+            }
+        }
+        input[type="radio"]:checked + label:before {
+            content: '';
+        }
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 15px;
+        font-family: $mb;
+        text-transform: uppercase;
+        color: #1F2041;
+        margin-bottom: 5px;
+    }
+    input[type="date"] {
+        margin-bottom: 20px;
+        color: rgba(31, 32, 65, 0.25);
+        text-transform: uppercase;
+    }
+    .registration__checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        input[type="checkbox"] {
+            margin-right: 10px;
+            opacity: 1;
+            appearance: none;
+            width: 40px;
+            height: 20px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 10px;
+            position: relative;
+            transition: all 0.5s ease;
+            &:after {
+                content: '';
+                border-radius: 10px;
+                background-color: rgba(31, 32, 65, 0.25);
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 3px;
+                left: 4px;
+                transition: all 0.5s ease;
+            }
+            &:checked {
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                &:after {
+                    left: 23px;
+                    background-color: #fff;
+                }
+            }
+        }
+        label {
+            font-size: 14px;
+            line-height: 24px;
+            color: $gray;
+            user-select: none;
+        }
+    }
+    .btn-full {
+        position: relative;
+        margin-bottom: 30px;
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: url('../img/arrow_forward_white.png') no-repeat center center;
+            width: 44px;
+            height: 44px;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+        }
+        .btn-empty {
+            line-height: 40px;
+            height: 44px;
+            width: 99px;
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.header {
+    padding: 18px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.main-nav {
+    margin-left: auto;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        padding-right: 20px;
+    }
+    &__link {
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 14px;
+    }
+    &__arrow {
+        display: inline-block;
+        padding: 0 6px;
+    }
+}
+

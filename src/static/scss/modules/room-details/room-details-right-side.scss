@@ -1,0 +1,160 @@
+.room-details {
+    &__right-side {
+        max-width: 380px;
+        margin-left: 70px;
+    }
+    
+}
+
+.right-side__window {
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    user-select: none;
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &-number {
+        color: #1F2041;
+        font-size: 20px;
+        line-height: 17px;
+        font-family: $mb;
+        margin-right: 5px;
+    }
+    &-luxe {
+        color: $purple;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: $mb;
+    }
+    &-count {
+        font-size: 14px;
+        line-height: 18px;
+        color: $gray-light;
+        font-family: $mb;
+    }
+    &-text {
+        font-size: 14px;
+        line-height: 24px;
+        color: $gray-light;
+    }
+    &-half {
+        &:first-child {
+            margin-right: 20px;
+        }
+        &__title {
+            font-size: 12px;
+            line-height: 15px;
+            font-family: $mb;
+            text-transform: uppercase;
+            color: #1F2041;;
+        }
+    }
+    &-dates {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-guests {
+        margin-bottom: 20px;
+        position: relative;
+        .dropdown {
+            left: 0;
+            bottom: -160px;
+            z-index: 1;
+        }
+        &__title {
+            margin-bottom: 5px;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: $mb;
+            text-transform: uppercase;
+        }
+        &__input {
+            width: 320px;
+            height: 44px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            padding-left: 15px;
+            color: $gray;
+            position: relative;
+            user-select: none;
+            cursor: pointer;
+            &:after {
+                content: '';
+                background: url('../img/expand_more.png') no-repeat center center;
+                width: 42px;
+                display: block;
+                height: 42px;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    &-info {
+        margin-bottom: 30px;
+        & > * {
+            &:not(:last-child) { margin-bottom: 10px; }
+        }
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            line-height: 18px;
+            color: $gray;
+            .i {
+                position: relative;
+                &:after {
+                    content: 'i';
+                    display: block;
+                    text-align: center;
+                    line-height: 20px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    color: rgba(31, 32, 65, 0.25);
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    width: 20px;
+                    height: 20px;
+                    font-family: $mb;
+                    position: absolute;
+                    top: -1px;
+                    right: -25px;
+                }
+            }
+        }
+        &__text {
+            max-width: 214px;
+        }
+    }
+    &-sum {
+        display: flex;
+        align-items: flex-end;
+        font-size: 19px;
+        line-height: 24px;
+        color: #1F2041;
+        font-size: $mb;
+        margin-bottom: 20px;
+        &__line {
+            width: 182px;
+            border: 1px dashed rgba(31, 32, 65, 0.25);
+        }
+    }
+    .btn-full {
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 44px;
+            background: url('../img/arrow_forward_white.png') no-repeat center center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

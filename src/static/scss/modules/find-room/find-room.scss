@@ -1,0 +1,78 @@
+.s-find-room {
+    padding-top: 70px;
+    .container {
+        position: relative;
+        padding-bottom: 386px;
+    }
+}
+
+.hotel-finder {
+    position: relative;
+    background: $white;
+    width: 380px;
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        display: block;
+        font-family: $mb;
+    }
+    &__dates {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__arrival {
+        margin-right: 20px;
+    }
+    &__text {
+        font-family: $quicksandBold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-family: $mb;
+    }
+    &__guests {
+        margin-bottom: 30px;
+    }
+}
+
+.find-room__text {
+    position: absolute;
+    bottom: 18px;
+    display: block;
+    right: 140px;
+    max-width: 297px;
+    text-align: right;
+    line-height: 24px;
+    font-size: 14px;
+    color: $gray;
+}
+
+.guests-input {
+    user-select: none;
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+    color: $gray;
+    position: relative;
+    padding: 10px 0 13px 15px;
+    &:after {
+        content: '';
+        background: url('../img/expand_more.png') no-repeat center center;
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        outline: 0;
+    }
+}
+

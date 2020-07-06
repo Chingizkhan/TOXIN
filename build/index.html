@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><img class="logo" src="static/img/logo.png">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="">О нас</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="">Услуги<img class="main-nav__arrow" src="static/img/expand_more.svg"></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="">Вакансии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="">Новости</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="">Соглашения<img class="main-nav__arrow" src="static/img/expand_more.svg"></a></li>
+            </ul>
+          </nav><a class="btn-empty" href="login.html">войти</a><a class="btn-full" href="registration.html">зарегистрироваться</a>
+        </div>
+      </header>
+      <div class="content">
+        <section class="s-find-room" style="background-image:url(static/img/background-image.png)">
+          <div class="container">
+            <div class="hotel-finder"><span class="hotel-finder__title">Найдём номера под ваши пожелания</span>
+              <div class="hotel-finder__dates">
+                <div class="hotel-finder__arrival">
+                  <p class="hotel-finder__text">прибытие</p>
+                  <input class="datepicker-here" type="text" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px" data-position="bottom left" placeholder="ДД.ММ.ГГГГ">
+                </div>
+                <div class="hotel-finder__leave"> 
+                  <p class="hotel-finder__text">выезд</p>
+                  <input class="datepicker-here" type="text" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px" data-position="bottom left" placeholder="ДД.ММ.ГГГГ">
+                </div>
+              </div>
+              <div class="hotel-finder__guests"> 
+                <p class="hotel-finder__text">гости</p>
+                <div class="guests-input">Сколько гостей</div>
+                <div class="dropdown">
+                  <div class="dropdown__line"> <span class="dropdown__text">взрослые</span>
+                    <div class="dropdown__count"><span class="dropdown__button dropdown__button-minus-1">-</span>
+                      <input class="dropdown__text dropdown__text-1" type="text" value="2"><span class="dropdown__button dropdown__button-plus-1">+</span>
+                    </div>
+                  </div>
+                  <div class="dropdown__line"> <span class="dropdown__text">дети</span>
+                    <div class="dropdown__count"><span class="dropdown__button dropdown__button-minus-2">-</span>
+                      <input class="dropdown__text dropdown__text-2" type="text" value="1"><span class="dropdown__button dropdown__button-plus-2">+</span>
+                    </div>
+                  </div>
+                  <div class="dropdown__line"> <span class="dropdown__text">младенцы</span>
+                    <div class="dropdown__count"><span class="dropdown__button dropdown__button-minus-3">-</span>
+                      <input class="dropdown__text dropdown__text-3" type="text" value="0"><span class="dropdown__button dropdown__button-plus-3">+</span>
+                    </div>
+                  </div>
+                  <div class="dropdown-buttons">
+                    <div class="dropdown-buttons__clear">очистить</div>
+                    <div class="dropdown-buttons__apply">применить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-full btn-large">подобрать номер</div>
+            </div><span class="find-room__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</span>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-wrapper">
+              <div class="footer-col"><img class="logo" src="static/img/logo.png"><span class="footer-top__text">Бронирование номеров в лучшем <br> отеле 2019 года по версии <br> ассоциации «Отельные взгляды»</span></div>
+              <div class="footer-col">
+                <div class="footer-col__title">навигация</div><a class="footer-col__text">О нас</a><a class="footer-col__text">Новости</a><a class="footer-col__text">Служба поддержки</a><a class="footer-col__text">Услуги</a>
+              </div>
+              <div class="footer-col">
+                <div class="footer-col__title">о нас</div><a class="footer-col__text">О сервисе</a><a class="footer-col__text">Наша команда</a><a class="footer-col__text">Вакансии</a><a class="footer-col__text">Инвесторы</a>
+              </div>
+              <div class="footer-col">
+                <div class="footer-col__title">Служба поддержки</div><a class="footer-col__text">Соглашения</a><a class="footer-col__text">Сообщества</a><a class="footer-col__text">Связь с нами</a>
+              </div>
+              <div class="footer-col">
+                <div class="footer-col__title">Подписка</div><a class="footer-col__text">Получайте специальные<br> предложения и новости сервиса</a>
+                <div class="footer-col__input-arrow">
+                  <input class="footer-col__input" type="email" placeholder="Email">
+                  <div class="arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container"><span class="copyright">Copyright © 2018 Toxin отель. Все права зачищены.</span>
+            <div class="social-links"><a class="social-link"><img src="static/img/twitter.png" alt="twitter"></a><a class="social-link"><img src="static/img/facebook.png" alt="facebook"></a><a class="social-link"><img src="static/img/instagramm.png" alt="instagramm"></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

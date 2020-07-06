@@ -1,0 +1,17 @@
+section(style="background-image:url(static/img/background-image.png)").s-find-room
+    .container
+        .hotel-finder
+            span.hotel-finder__title Найдём номера под ваши пожелания
+            .hotel-finder__dates
+                .hotel-finder__arrival
+                    p.hotel-finder__text прибытие
+                    input(type="text" class="datepicker-here" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px" data-position="bottom left" placeholder="ДД.ММ.ГГГГ")
+                .hotel-finder__leave 
+                    p.hotel-finder__text выезд
+                    input(type="text" class="datepicker-here" style="width:150px; margin-top:5.5px; font-size:14px; height: 44px; padding-left: 15px" data-position="bottom left" placeholder="ДД.ММ.ГГГГ")
+            .hotel-finder__guests 
+                p.hotel-finder__text гости
+                .guests-input Сколько гостей
+                include ../dropdown/dropdown                
+            .btn-full.btn-large подобрать номер
+        span.find-room__text Лучшие номера для вашей работы, отдыха и просто вдохновения
